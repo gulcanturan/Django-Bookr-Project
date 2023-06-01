@@ -1,0 +1,75 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #e6efe8;
+    color: #393939;
+}
+
+
+.navbar {
+    min-height: 100px;
+    font-size: 25px;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+
+.navbar-brand>img {
+    height: 60px;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+
+
+
+.main-container {
+    padding: 20px;
+    background-color: white;
+    height: calc(100vh - 210px);
+    width: 100vw;
+
+}
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background-color: #f5f5f5; */
+    padding: 10px;
+    text-align: center;
+    height: 140px;
+
+}
+
+.footer div>span {
+    color: blue;
+}

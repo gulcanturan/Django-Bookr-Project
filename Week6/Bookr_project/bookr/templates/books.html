@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/books.css' %}">
+
+
+    <div class="main-container">
+        {% for book in books %}
+
+
+        <div class="book-info">
+            <span> Title :</span> {{book.title}}
+        </div>
+        <div class="book-info">
+            <span> Publisher :</span> {{book.publisher}}
+        </div>
+        <div class="book-info">
+            <span> Publication Date :</span> {{book.publication_date}}
+        </div>
+        <div class="book-info">
+            <span> Rating :</span> {{book.rating}}
+        </div>
+        <div class="book-info">
+            <span> Number of Reviews :</span> {{book.num_reviews}}
+        </div>
+        <span>Provide a rating and write the firs review for this book.</span>
+        <br>
+        <a type="button" class="btn btn-primary" href="{% url 'book_detail' pk=book.id %}"">Reviews</a>
+
+        <hr>
+        
+    
+
+
+
+
+    {% endfor %}
+</div>
+
+{% endblock %}
