@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    
+
+
+
+    <style>
+        .login-container {
+            margin: 100px 30%;
+            background-color: white;
+            padding: 50px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border-radius: 10px;
+        }
+    </style>
+    
+    <div class="login-container">
+    
+    
+        <h2>Register</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+       
+            <button class="btn btn-primary" type="submit">Register</button>
+    
+        </form>
+    
+    </div>
+    
+{% endblock %}

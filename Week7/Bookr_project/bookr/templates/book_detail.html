@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/books.css' %}">
+
+
+    <div class="main-container">
+
+      <h1>Book Details</h1>
+
+      <hr>
+        <div class="book-info">
+            <span> Title :</span> {{book.title}}
+        </div>
+        <div class="book-info">
+            <span> Publisher :</span> {{book.publisher}}
+        </div>
+        <div class="book-info">
+            <span> Publication Date :</span> {{book.publication_date}}
+        </div>
+      
+        <hr>
+        <h2>Be the first one to write a review.</h2>
+    
+</div>
+
+{% endblock %}
